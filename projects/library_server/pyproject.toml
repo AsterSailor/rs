@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "library_server"
+version = "0.1.0"
+
+authors = ["Brad Miller <bonelake@mac.com>"]
+license = ""
+
+packages = [
+   {include = "rsptx/db", from = "../../components"},
+   {include = "rsptx/library", from = "../../bases"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.3"
+sqlalchemy = "^2.0.41"
+jinja2 = "^3.1.6"
+asyncpg = "^0.30.0"
+greenlet = "^3.2.3"
+python-dateutil = "^2.9.0.post0"
+pyhumps = "^3.8.0"
+pydal = "^20250526.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -21,6 +21,7 @@ packages = [
     { include = "rsptx/endpoint_validators", from = "../../components" },
     { include = "rsptx/assignment_server_api", from = "../../bases" },
     { include = "rsptx/lti1p3", from = "../../components" },
+    { include = "rsptx/scamper", from = "../../bases" }
 ]
 
 exclude = [
